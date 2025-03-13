@@ -5,8 +5,8 @@ sequenceDiagram
     participant browser
     participant server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
-    activate server
+    user->>brwoser: [{ "content": "New Note", "date": "2023-1-1" }, ... ]
+    activate Browser
     server-->>browser: HTML document
     deactivate server
 
