@@ -6,7 +6,7 @@ sequenceDiagram
     participant server
 
     user->>brwoser: [{ "content": "New Note", "date": "2023-1-1" }, ... ]
-    activate Browser
+    activate browser
     server-->>browser: HTML document
     deactivate server
 
