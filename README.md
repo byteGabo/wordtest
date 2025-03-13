@@ -14,7 +14,7 @@ sequenceDiagram
     server-->>browser: the JavaScript file
     deactivate server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/note
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
     server-->>browser: HTML document
     deactivate server
