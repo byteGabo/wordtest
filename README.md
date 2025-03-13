@@ -1,11 +1,10 @@
  ```mermaid
 
 sequenceDiagram
-    participant user
     participant browser
     participant server
 
-    user->>brwoser: [{ "content": "New Note", "date": "2023-1-1" }, ... ]
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate browser
     server-->>browser: HTML document
     deactivate server
